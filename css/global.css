@@ -1,0 +1,121 @@
+* {
+    font-family: 'Cairo', sans-serif;
+ }
+ 
+ /* table {
+    table-layout: fixed !important;
+    word-wrap: break-word !important;
+ } */
+ .error{
+    color:red;
+ }
+ 
+ /* ==========================================================================
+    principal
+ ========================================================================== */
+ .principal {
+    min-height: 100vh;
+    display: flex;
+    align-items: start;
+ }
+ .main {
+   min-height: 80vh;
+   align-items: start;
+}
+ /* ==========================================================================
+    form
+ ========================================================================== */
+ 
+ .form-control:focus {
+    outline: none !important;
+    border-color: transparent;
+    box-shadow: none !important;
+    border: 1px solid #CED4DA;
+ }
+ 
+ .name-user {
+    font-size: 1.3em !important;
+ }
+ 
+ /* ==========================================================================
+    fim form
+ ========================================================================== */
+ 
+ 
+ /* ==========================================================================
+    menu
+ ========================================================================== */
+ .navbar {
+    background-color: #020304 !important;
+ }
+ 
+ .custom-menu {
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: 1px;
+ }
+ 
+ .dropdown-menu.show {
+    padding: 0 !important;
+ }
+ 
+ .dropdown-divider {
+    margin: 0 !important;
+ }
+ 
+ /* ==========================================================================
+    fim menu
+ ========================================================================== */
+ 
+ /* ==========================================================================
+    footer
+ ========================================================================== */
+ .footer {
+    background-color: #25C800;
+ }
+ 
+ .height-footer {
+    line-height: 1;
+    font-weight: 700;
+    font-size: 0.75em;
+ }
+ 
+ /* ==========================================================================
+    fim footer
+ ========================================================================== */
+ 
+ /* ==========================================================================
+    dashboard
+ ========================================================================== */
+ .fts-thumbnail img {
+    /* background: #000; */
+    /* width: 200px; */
+    height: 130px;
+ }
+ .error{
+    color:red;
+ }
+ 
+ .img-ftamini{
+    width:200px;
+    max-width: inherit;
+ }
+ 
+ .big-checkbox {width: 30px; height: 30px;}
+ /* ==========================================================================
+    fim dashboard
+ ========================================================================== */
+ 
+ #loader {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   width: 100%;
+   z-index: 10000;
+   background: #191f26 url(../img/loading.gif) no-repeat center center;
+   /* background: rgba(0,0,0,0.75) url(../img/loading.gif) no-repeat center center; */
+   
+ }
