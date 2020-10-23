@@ -10,18 +10,18 @@ if(file_exists(__DIR__ .'/__dev.php')){
 session_start();
 $TRUE=basename($_SERVER['SCRIPT_FILENAME']);
 $_SESSION['server']=URL;
-$_SESSION['SID']="Thai.".md5($_SERVER['REMOTE_ADDR'].$_SERVER['HTTP_USER_AGENT']);
+$_SESSION['SID']="Dli.".md5($_SERVER['REMOTE_ADDR'].$_SERVER['HTTP_USER_AGENT']);
 $_SESSION['rtStart'] = microtime(true);
 if(AMBIENTE == "DEVELOPER"){
   //define errorlevel (tela) e LOG como verdadeiros
   error_reporting(E_ALL);
   ini_set("display_errors",TRUE);
-  ini_set("error_log",_FS."ERROS.THAI");
+  ini_set("error_log",_FS.".ERROS");
 } else {
   //define error_level=0 nenhum erro apresentado na tela, salva em arquivo.
   error_reporting(E_ALL);
   ini_set("display_errors",0);
-  ini_set("error_log",_FS."USER.ERROR.THAI");
+  ini_set("error_log",_FS.".USER.ERROS");
 }
 unset($_REQUEST);
 
