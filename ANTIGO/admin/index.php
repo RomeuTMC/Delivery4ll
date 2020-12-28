@@ -15,11 +15,6 @@ if(file_exists(_FS."admin/_controls/".$_SESSION['control']."_control.php")){
         $_SESSION['erro']='CHAMADA PARA PROCEDIMENTO INVÁLIDO';
     }  
 }
-// if(isset($_SESSION['redirect']) and $_SESSION['redirect']<>FALSE){
-//     $redirect=$_SESSION['redirect'];
-//     unset($_SESSION['redirect']);
-//     header("Location:".ADMIN.$redirect);
-// }
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

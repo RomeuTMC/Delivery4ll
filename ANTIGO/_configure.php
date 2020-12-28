@@ -30,7 +30,7 @@ $db=ConectDb();
 
 
 // VERIFICA SE É CONEXÃO SEGURA, e ABRE O SISTEMA DE ROTEAMENTO
-if(strtoupper($_SERVER['REQUEST_SCHEME'])!='HTTPS'){
+if(strtoupper($_SERVER['REQUEST_SCHEME'])!='HTTP'){
   __out("1001 - Obrigatório o uso de HTTPS",406);
 }
 if(isset($_GET['route'])){
